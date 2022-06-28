@@ -111,3 +111,30 @@ footer .contact button:hover {
     background-color: var(--mainColor);
     border-color: var(--mainColor);
 }
+
+div.ilustration {
+    margin-top: 5%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+div.choice {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+div.choice a {
+    text-decoration: none;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: var(--sndColor);
+    border-style: ridge;
+}
+
+div.choice a:hover {
+    border-style: dotted;
+    color: var(--sndColor);
+}
