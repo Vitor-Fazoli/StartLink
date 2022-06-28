@@ -112,6 +112,10 @@ footer .contact button:hover {
     border-color: var(--mainColor);
 }
 
+.main-register {
+    background-color: var(--trdColor);
+}
+
 div.ilustration {
     margin-top: 5%;
     display: inline-block;
@@ -140,9 +144,10 @@ div.choice a:hover {
 }
 
 .register {
+    background-color: var(--trdColor);
     text-align: center;
     align-items: center;
-    margin-bottom: 10%;
+    padding-bottom: 10%;
 }
 
 .register h1 {
@@ -151,4 +156,44 @@ div.choice a:hover {
 
 .register input {
     text-align: center;
+    background-color: var(--trdColor);
+}
+
+.searchPage {
+    background-color: var(--trdColor);
+}
+
+.searchPage .title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.searchPage th {
+    color: var(--sndColor);
+    text-transform: uppercase;
+    font-style: bold;
+}
+
+.searchPage table,
+.searchPage tr,
+.searchPage th,
+.searchPage td {
+    border: 2px solid --sndColor;
+}
+
+.searchPage td {
+    padding: 3px;
+    text-align: center;
+}
+
+.searchPage form {
+    text-indent: 30px;
+}
+
+.searchPage table {
+    margin: 30px;
+}
+
+.searchPage input {
+    background-color: var(--trdColor);
 }
