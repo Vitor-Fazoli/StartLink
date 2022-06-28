@@ -11,6 +11,19 @@
     font-family: 'Reem Kufi', sans-serif;
 }
 
+button {
+    border-style: solid;
+    border-color: var(--sndColor);
+    background-color: transparent;
+    color: var(--sndColor);
+}
+
+input {
+    border-style: solid;
+    border-color: var(--sndColor);
+    background-color: transparent;
+}
+
 header {
     padding: 0%;
     background-color: var(--mainColor);
@@ -195,5 +208,20 @@ div.choice a:hover {
 }
 
 .searchPage input {
+    background-color: var(--trdColor);
+}
+
+.login-screen {
+    padding-top: 15%;
+    background-color: var(--trdColor);
+    text-align: center;
+    color: var(--sndColor);
+}
+
+.login-screen h1 {
+    font-size: 60px;
+}
+
+.login-screen input {
     background-color: var(--trdColor);
 }
