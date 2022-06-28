@@ -138,3 +138,17 @@ div.choice a:hover {
     border-style: dotted;
     color: var(--sndColor);
 }
+
+.register {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.register h1 {
+    font-size: 70px;
+}
+
+.register input {
+    text-align: center;
+}
