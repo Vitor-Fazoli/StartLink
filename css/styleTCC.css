@@ -1,294 +1,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
 
-
 * {
-    --mainColor: #FFDE59;
-    --sndColor: #22060d;
-    --trdColor: #faebd7;
+  --mainColor: #FFDE59;
+  --sndColor: #22060d;
+  --trdColor: #faebd7;
 
-    margin: 0%;
-    font-size: 20px;
-    font-family: 'Reem Kufi', sans-serif;
+  margin: 0%;
+  font-size: 20px;
+  font-family: 'Reem Kufi', sans-serif;
 }
-p{
-    font-family:'Reem Kufi', sans-serif
 
+p {
+  font-family: 'Reem Kufi', sans-serif
 }
 
 button {
-    border-style: solid;
-    border-color: var(--sndColor);
-    background-color: transparent;
-    color: var(--sndColor);
+  border-style: solid;
+  border-color: var(--sndColor);
+  background-color: transparent;
+  color: var(--sndColor);
 }
 
 
 header {
-    padding: 0%;
-    background-color: var(--mainColor);
+  padding: 0%;
+  background-color: var(--mainColor);
 }
+
 div {
-    margin: 0%;
+  margin: 0%;
 }
 
 .cab {
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: var(--mainColor);
-}
-.cab img{
-    width: 90px;
-    height: 90px;
-
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--mainColor);
 }
 
 .logo {
-    width: 10%;
-    margin: 0.5%;
-}
-.Games{
-    padding-top: 10px;
-    color: black;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 10%;
+  margin: 0.5%;
 }
 
-.Games tr{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.Games {
+  padding-top: 4%;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.Games td{
-    width: 100%;
+.Games tr {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.Games table{
-    padding-bottom: 70px;
+.Games td {
+  width: 100%;
+}
+
+.Games table {
+  padding-bottom: 40px;
 }
 
 .Games p {
-    font-size: 35px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
-.Games img{
-    margin-top: 3%;
-    align-items: center;
-    width: 10%;
-    max-height: 40%;
-
-    
-  }
-  .click-modal {
-    padding-top: 10px;
-    color: black;
-    background-color: white;
-    display: flexbox;
-    flex-direction: row;
-    text-align: center;
-    position: fixed;
-    top: 30%;
-    right: 28%;
-    left: 28%;
-    z-index: 99999;
-    opacity: 0;
-    -webkit-transition: opacity 300ms ease-in;
-    -moz-transition: opacity 300ms ease-in;
-    transition: opacity 300ms ease-in;
-    pointer-events: none;
-    overflow-y: none;
-    border-radius: 20px;
-    font-family:'Reem Kufi', sans-serif;
-  }
-  
-  .click-modal:target {
-    opacity: 1;
-    pointer-events: auto;
-  }
-  
-  .click-modal-title {
-    font-family:'Reem Kufi', sans-serif;
-    color: #22060d;
-    text-align: center;
-    background-color: #FFDE59;
-    padding: 20px;
-    border-radius: 20px 0 0 0;
-    margin-bottom: 0px;
-  }
-  
-  .click-modal > div {
-    font-family:'Reem Kufi', sans-serif;
-    position: relative;
-    margin: 0;
-    padding-bottom: 20px;
-    background-color: white;
-    color:#22060d;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  .fechar {
-    font-family:'Reem Kufi', sans-serif;
-    position: absolute;
-    width: 30px;
-    right: -15px;
-    top: -20px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background-color: #FFDE59;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #22060d;
-    text-decoration: none;
-  }
-  .Cancelar{
-    font-family:'Reem Kufi', sans-serif;
-    position: auto;
-    width: 30px;
-    right: 425px;
-    top: 100px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background-color: #FFDE59;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #22060d;
-    text-decoration: none;
-  }
-  .Enviar{
-    font-family:'Reem Kufi', sans-serif;
-    position: auto;
-    width: 30px;
-    right: 425px;
-    top: 100px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background-color: #FFDE59;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #22060d;
-    text-decoration: none;
-  }
-
-.img2{
-    padding-top: 00.5%;
-    padding-bottom: 0.5%;
-    text-align: center;
-  }
-  .tamanho{
-    width: 500px;
-    height: 400x;
-
-   
+.Games img {
+  margin-top: 3%;
+  align-items: center;
+  width: 10%;
+  max-height: 40%;
 }
+
+
+.style-p{
+    font-weight: 100;
+}
+
+.click-modal {
+  padding-top: 10px;
+  color: black;
+  background-color: white;
+  display: flexbox;
+  flex-direction: row;
+  text-align: center;
+  position: fixed;
+  top: 30%;
+  right: 28%;
+  left: 28%;
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  -moz-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+  pointer-events: none;
+  overflow-y: none;
+  border-radius: 20px;
+  font-family: 'Reem Kufi', sans-serif;
+}
+
+.click-modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.click-modal-title {
+  font-family: 'Reem Kufi', sans-serif;
+  color: #22060d;
+  text-align: center;
+  background-color: #FFDE59;
+  padding: 20px;
+  border-radius: 20px 0 0 0;
+  margin-bottom: 0px;
+}
+
+.click-modal>div {
+  font-family: 'Reem Kufi', sans-serif;
+  position: relative;
+  margin: 0;
+  padding-bottom: 20px;
+  background-color: white;
+  color: #22060d;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fechar {
+  font-family: 'Reem Kufi', sans-serif;
+  position: absolute;
+  width: 30px;
+  right: -15px;
+  top: -20px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background-color: #FFDE59;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #22060d;
+  text-decoration: none;
+}
+
+.Cancelar {
+  font-family: 'Reem Kufi', sans-serif;
+  position: auto;
+  width: 30px;
+  right: 425px;
+  top: 100px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background-color: #FFDE59;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #22060d;
+  text-decoration: none;
+}
+
+.Enviar {
+  font-family: 'Reem Kufi', sans-serif;
+  position: auto;
+  width: 30px;
+  right: 425px;
+  top: 100px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  background-color: #FFDE59;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #22060d;
+  text-decoration: none;
+}
+
+.img2 {
+  padding-top: 00.5%;
+  padding-bottom: 0.5%;
+  text-align: center;
+}
+
+/*Fixa o tamanho da imagem*/
+
+.tamanho {
+  width: 300px;
+   padding: 30px;
+}
+
 .tamanho img{
-    width: 250px ;
-    height: 30%;
-    max-height: 40%;
+  width: 100%;
+ 
+}
+/*Fim*/
+
+.tamanho2 {
+  width: 100%;
+  height: 900%;
+  max-height: 90%;
+  max-width: 100%;
+}
+
+.list {
+  padding-top: auto;
+  padding-bottom: 30px;
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-.list {
-    padding-top: auto;
-    color: black;
-    background-color: white;
+
+.list2 {
+
+  font-size: 12px;
+  flex-direction: row;
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  width: 45%;
+  text-decoration: none;
+  padding-right: 5%;
+  padding-left: 5%;
+  color: var(--sndColor);
+  border-style: ridge;
+  border-style: dotted;
+  color: var(--sndColor);
+}
+
+@media only screen and (max-width:1070px){
+  .list2 table tr{
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-    
+  }
+
+  .list2 table {
+    margin: auto;
+    width: 100%;
+  }
+
+  .list2 th {
+    width: 100%;
+  }
+
+  .list2 .tamanho{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  
+  .list2 .tamanho img{
+    width: 100%;
+    margin: auto;
+  }
+  
+ 
 }
 
 
-.list2{
-
-    font-size: 12px;
-    flex-direction: row;
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    width: 45%;
-    text-decoration: none;
-    padding-right: 50px;
-    padding-left: 50px;
-    color: var(--sndColor);
-    border-style: ridge;
-    border-style: dotted;
-    color: var(--sndColor);
-   
-}
-.list2 img{
-    padding-right: 350px;
-    padding-left: 50px;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    max-width: 500px;
-    max-height: 500px;
-    
-}
-.list2 p{
-    margin-top: 2%;
-    margin-bottom: 5%;
+.list2 p {
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 
 
 footer .social-media {
-    background-color: var(--sndColor);
-    text-align: center;
-    padding-top: 0.5%;
+  background-color: var(--sndColor);
+  text-align: center;
+  padding-top: 0.5%;
 }
 
 footer .social-media img {
-    transition: all 0.20s ease-in-out;
-    width: 3%;
+  transition: all 0.20s ease-in-out;
+  width: 3%;
 }
 
 footer .social-media img:hover {
-    width: 3.5%;
+  width: 3.5%;
 }
 
 footer .contact {
-    padding-top: 00.5%;
-    padding-bottom: 0.5%;
-    background-color: var(--sndColor);
-    text-align: center;
+  padding-top: 00.5%;
+  padding-bottom: 0.5%;
+  background-color: var(--sndColor);
+  text-align: center;
 }
 
 footer .contact p {
-    font-size: 13px;
-    color: var(--trdColor);
-    padding-top: 1%;
+  font-size: 13px;
+  color: var(--trdColor);
+  padding-top: 1%;
 }
 
 footer .contact button {
-    text-decoration: none;
-    border-color: var(--trdColor);
-    color: var(--trdColor);
-    padding: 0.5%;
-    transition: all 0.10s ease-in-out;
-    background-color: transparent;
+  text-decoration: none;
+  border-color: var(--trdColor);
+  color: var(--trdColor);
+  padding: 0.5%;
+  transition: all 0.10s ease-in-out;
+  background-color: transparent;
 }
 
 footer .contact button:hover {
-    color: var(--sndColor);
-    background-color: var(--mainColor);
-    border-color: var(--mainColor);
+  color: var(--sndColor);
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
 }
-
-
-
-
-
-
-
