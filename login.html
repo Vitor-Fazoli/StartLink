@@ -28,12 +28,12 @@
             usuario = usuario.toLowerCase();
             var senha = document.getElementsByName('senha')[0].value;
             seha = senha.toLowerCase();
-            if (usuario == "admin" && senha == "admin") {
-                window.location = "searchPaper.html";
+            if (usuario == "estudante" && senha == "estudante") {
+                window.location = "TCC.html";
                 done = 1;
             }
-            if (usuario == "business" && senha == "business") {
-                window.location = "TCC.html";
+            if (usuario == "empresa" && senha == "empresa") {
+                window.location = "searchPaper.html";
                 done = 1;
             }
             if (done == 0) { alert("Dados incorretos, tente novamente"); }

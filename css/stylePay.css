@@ -38,12 +38,18 @@ header.li a:hover {
     box-shadow: #22060d;
 }
 
+.cab {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--mainColor);
+}
+
 .logo {
     width: 10%;
     margin: 0.5%;
 }
-
-
 
 body {
     font-family: 'Reem Kufi', sans-serif;
