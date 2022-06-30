@@ -10,9 +10,9 @@
     font-size: 20px;
     font-family: 'Reem Kufi', sans-serif;
 }
+p{
+    font-family:'Reem Kufi', sans-serif
 
-p {
-    font-family: 'Reem Kufi', sans-serif
 }
 
 button {
@@ -27,7 +27,6 @@ header {
     padding: 0%;
     background-color: var(--mainColor);
 }
-
 div {
     margin: 0%;
 }
@@ -39,13 +38,17 @@ div {
     overflow: hidden;
     background-color: var(--mainColor);
 }
+.cab img{
+    width: 90px;
+    height: 90px;
+
+}
 
 .logo {
     width: 10%;
     margin: 0.5%;
 }
-
-.Games {
+.Games{
     padding-top: 10px;
     color: black;
     background-color: white;
@@ -54,7 +57,7 @@ div {
     justify-content: center;
 }
 
-.Games tr {
+.Games tr{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -62,82 +65,183 @@ div {
     justify-content: center;
 }
 
-.Games td {
+.Games td{
     width: 100%;
 }
 
-.Games table {
+.Games table{
     padding-bottom: 70px;
 }
 
 .Games p {
     font-size: 35px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
-.Games img {
+.Games img{
     margin-top: 3%;
     align-items: center;
     width: 10%;
-    max-height: 50%;
+    max-height: 40%;
 
-}
+    
+  }
+  .click-modal {
+    padding-top: 10px;
+    color: black;
+    background-color: white;
+    display: flexbox;
+    flex-direction: row;
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    right: 28%;
+    left: 28%;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease-in;
+    -moz-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+    pointer-events: none;
+    overflow-y: none;
+    border-radius: 20px;
+    font-family:'Reem Kufi', sans-serif;
+  }
+  
+  .click-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .click-modal-title {
+    font-family:'Reem Kufi', sans-serif;
+    color: #22060d;
+    text-align: center;
+    background-color: #FFDE59;
+    padding: 20px;
+    border-radius: 20px 0 0 0;
+    margin-bottom: 0px;
+  }
+  
+  .click-modal > div {
+    font-family:'Reem Kufi', sans-serif;
+    position: relative;
+    margin: 0;
+    padding-bottom: 20px;
+    background-color: white;
+    color:#22060d;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .fechar {
+    font-family:'Reem Kufi', sans-serif;
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background-color: #FFDE59;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #22060d;
+    text-decoration: none;
+  }
+  .Cancelar{
+    font-family:'Reem Kufi', sans-serif;
+    position: auto;
+    width: 30px;
+    right: 425px;
+    top: 100px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background-color: #FFDE59;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #22060d;
+    text-decoration: none;
+  }
+  .Enviar{
+    font-family:'Reem Kufi', sans-serif;
+    position: auto;
+    width: 30px;
+    right: 425px;
+    top: 100px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background-color: #FFDE59;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #22060d;
+    text-decoration: none;
+  }
 
-.img2 {
+.img2{
     padding-top: 00.5%;
     padding-bottom: 0.5%;
     text-align: center;
-}
+  }
+  .tamanho{
+    width: 500px;
+    height: 400x;
 
+   
+}
+.tamanho img{
+    width: 250px ;
+    height: 30%;
+    max-height: 40%;
+
+}
 .list {
     padding-top: auto;
     color: black;
     background-color: white;
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
 }
 
-.tamanho {
-    width: 500px;
-    height: 400x;
 
+.list2{
 
-}
-
-.tamanho2 {
-    width: 500px;
-    height: 50 0x;
-}
-
-.list2 {
+    font-size: 12px;
     flex-direction: row;
     list-style-type: none;
     display: inline-block;
     text-align: center;
-    width: 50%;
-    margin-bottom: 3%;
+    width: 45%;
     text-decoration: none;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
     color: var(--sndColor);
     border-style: ridge;
     border-style: dotted;
     color: var(--sndColor);
-    padding-left: 5px;
+   
 }
-
-.list2 img {
+.list2 img{
+    padding-right: 350px;
+    padding-left: 50px;
     margin-top: 2%;
     margin-bottom: 5%;
     max-width: 500px;
     max-height: 500px;
+    
+}
+.list2 p{
+    margin-top: 2%;
+    margin-bottom: 5%;
 
 }
+
 
 footer .social-media {
     background-color: var(--sndColor);
@@ -185,98 +289,6 @@ footer .contact button:hover {
 
 
 
-.recSenha-modal {
-    padding-top: 10px;
-    color: black;
-    background-color: white;
-    display: flexbox;
-    flex-direction: row;
-    text-align: center;
-    position: fixed;
-    top: 30%;
-    right: 28%;
-    left: 28%;
-    z-index: 99999;
-    opacity: 0;
-    -webkit-transition: opacity 300ms ease-in;
-    -moz-transition: opacity 300ms ease-in;
-    transition: opacity 300ms ease-in;
-    pointer-events: none;
-    overflow-y: none;
-    border-radius: 20px;
-    font-family: 'Reem Kufi', sans-serif;
-}
 
-.recSenha-modal:target {
-    opacity: 1;
-    pointer-events: auto;
-}
 
-.recSenha-modal-title {
-    font-family: 'Reem Kufi', sans-serif;
-    color: #22060d;
-    text-align: center;
-    background-color: #FFDE59;
-    padding: 20px;
-    border-radius: 20px 0 0 0;
-    margin-bottom: 0px;
-}
 
-.recSenha-modal>div {
-    font-family: 'Reem Kufi', sans-serif;
-    position: relative;
-    margin: 0;
-    padding-bottom: 20px;
-    background-color: white;
-    color: #22060d;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.fechar {
-    font-family: 'Reem Kufi', sans-serif;
-    position: absolute;
-    width: 30px;
-    right: -15px;
-    top: -20px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background-color: #FFDE59;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #22060d;
-    text-decoration: none;
-}
-
-.Cancelar {
-    font-family: 'Reem Kufi', sans-serif;
-    position: auto;
-    width: 30px;
-    right: 425px;
-    top: 100px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background-color: #FFDE59;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #22060d;
-    text-decoration: none;
-}
-
-.Enviar {
-    font-family: 'Reem Kufi', sans-serif;
-    position: auto;
-    width: 30px;
-    right: 425px;
-    top: 100px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background-color: #FFDE59;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #22060d;
-    text-decoration: none;
-}

@@ -12,15 +12,12 @@
 
 <body>
     <header>
-
-        <div class="cab">
-            <ul>
-                <div class="cab">
-                    <li style="float:left"><img class="logo" src="images/StartLink.svg" alt=""></li>
-                    <li><a href="login.html">Entrar</a></li>
-                    <li><a href="registerMain.html">Cadastrar</a></li>
-                </div>
-            </ul>
+        <ul>
+            <div class="cab">
+                <li style="float:left"><a href="login.html"><img class="logo" src="images/StartLink.svg" alt=""></a>
+                </li>
+            </div>
+        </ul>
 
     </header>
     <section class="Games">
@@ -31,9 +28,9 @@
                         <img src="images/Adicionar.jpg" alt="">
                     </a><br>
                     <p>Adicionar</p>
-                    <div id="AdicionarT" class="recSenha-modal">
+                    <div id="AdicionarT" class="click-modal">
                         <a href="#fechar" title="Fechar" class="fechar">X</a>
-                        <h2 class="recSenha-modal-title">Adicionar</h2>
+                        <h2 class="click-modal-title">Adicionar</h2>
                         <p>Título do TCC: </p>
                         <input placeholder="Startlink" type="text">
                         <p>Assunto:</p>
@@ -43,7 +40,7 @@
                         <p>Arquivo</p>
                         <input placeholder="Biologia marinha" type="password"><br><br>
                         <forms class="recSenha">
-                            <a href="#Enviar" title="Enviar" class="Enviar"><input type="submit" value="Enviar"></a>
+                            <a href="#Enviar" title="Enviar" class="Enviar"><input type="button" value="Enviar"></a>
                             <a href="#Cancelar" title="Cancelar" class="Cancelar"><input type="submit"
                                     value="Cancelar"></a>
                         </forms>
@@ -52,22 +49,41 @@
                 <td>
                     <a href="#ExcluirT"> <img src="images/lixo.png" alt=""></a><br>
                     <p>Excluir</p>
-                    <div id="ExcluirT" class="recSenha-modal">
+                    <div id="ExcluirT" class="click-modal">
                         <a href="#fechar" title="Fechar" class="fechar">X</a>
-                        <h2 class="recSenha-modal-title">Excluir</h2>
-                        <p>Selecione o TCC</p>
+                        <h2 class="click-modal-title">Excluir</h2><br>
+
+                        <p>Selecione o TCC</p><br>
+                        <input type="checkbox" id="Jogos" name="Jogos">
+                        <label for="Jogos">Título do TCC: Estimulaçaão de Jogos</label><br>
+
+                        <input type="checkbox" id="Ensino" name="Ensino">
+                        <label for="Ensino">Título do TCC: As Novas Ferramentas de Ensino</label><br>
+
+                        <input type="checkbox" id="Educacionais" name="Educacionais">
+                        <label for="Educacionais">Título do TCC: Jogos digitais educacionais</label><br>
+
+                        <input type="checkbox" id="Cognicao" name="Cognicao">
+                        <label for="Cognicao">Título do TCC:Cognição & ação</label><br><br>
+
+
+                        <a href="#Enviar" title="Enviar" class="Enviar"><input type="button" value="Excluir"></a>
+                        </forms>
+
                         <forms class="recSenha">
                             <a href="#Cancelar" title="Cancelar" class="Cancelar"> <input type="submit"
                                     value="Cancelar"> </a>
                         </forms>
+
                     </div>
+
                 </td>
                 <td>
                     <a href="#ModificarT"> <img src="images/editar.jpg" alt=""></a><br>
                     <p>Modificar</p>
-                    <div id="ModificarT" class="recSenha-modal">
+                    <div id="ModificarT" class="click-modal">
                         <a href="#fechar" title="Fechar" class="fechar">X</a>
-                        <h2 class="recSenha-modal-title">Modificar</h2>
+                        <h2 class="click-modal-title">Modificar</h2>
                         <p>Título do TCC: </p>
                         <input placeholder="Startlink" type="text">
                         <p>Assunto:</p>
@@ -94,8 +110,8 @@
                             <div class="tamanho"><img src="images/JogosEstimularTCC2.jpg" alt=""></div>
                         </th>
                         <th>
-                            <p>Título do TCC: Estimulaçaão de Jogos</p><br>
-                            <p>Assunto: Jogos para a estimulação das múltiplas inteligências</p><br>
+                            <p>Título do TCC: Estimulação de Jogos</p>
+                            <p>Assunto: Jogos para a estimulação das múltiplas inteligências</p>
                             <p>Área que abrange o TCC: Programação de Sistemas</p>
                         </th>
                     </tr><br>
@@ -108,8 +124,8 @@
                             <div class="tamanho"><img src="images/jogos-pedagogicosTCC5.jpg" alt=""></div>
                         </th>
                         <th>
-                            <p>Título do TCC: As Novas Ferramentas de Ensino</p><br>
-                            <p>Assunto:Os jogos pedagógicos como ferramentas de ensino</p><br>
+                            <p>Título do TCC: As Novas Ferramentas de Ensino</p>
+                            <p>Assunto:Os jogos pedagógicos como ferramentas de ensino</p>
                             <p>Área que abrange o TCC:Programação de Sistemas</p>
                         </th>
                     </tr><br>
@@ -122,8 +138,8 @@
                             <div class="tamanho"><img src="images/jogos-educativosTCC3.jpg" alt=""></div>
                         </th>
                         <th>
-                            <p>Título do TCCJogos digitais educacionais</p><br>
-                            <p>Assunto:Jogos digitais educacionais: benefícios e desafios</p><br>
+                            <p>Título do TCC: Jogos digitais educacionais</p>
+                            <p>Assunto:Jogos digitais educacionais: benefícios e desafios</p>
                             <p>Área que abrange o TCC:Interface/Interação Humano Computado</p>
                         </th>
                     </tr><br>
@@ -133,11 +149,11 @@
                 <table>
                     <tr>
                         <th>
-                            <div class="tamanho2"><img src="images/controle.png" alt=""></div>
+                            <div class="tamanho"><img src="images/controle.png" alt=""></div>
                         </th>
                         <th>
-                            <p>Título do TCC:Cognição & ação</p><br>
-                            <p>Assunto:Cognição & ação nos jogos esportivos coletivos</p><br>
+                            <p>Título do TCC:Cognição & ação</p>
+                            <p>Assunto:Cognição & ação nos jogos esportivos coletivos</p>
                             <p>Área que abrange o TCC:Análise de Sistemas</p>
                         </th>
                     </tr><br>
