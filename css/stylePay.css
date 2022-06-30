@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+* {
+    --mainColor: #FFDE59;
+    --sndColor: #22060d;
+    --trdColor: #faebd7;
+}
+
+header {
+    padding: 0%;
+    background-color: var(--mainColor);
+}
+
+header.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--mainColor);
+}
+
+header.li {
+    float: right;
+}
+
+header.li a {
+    display: block;
+    color: var(--sndColor);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.10s ease-in-out;
+}
+
+header.li a:hover {
+    font-size: 21px;
+    color: var(--trdColor);
+    box-shadow: #22060d;
+}
+
+.logo {
+    width: 10%;
+    margin: 0.5%;
+}
+
+
+
+body {
+    font-family: 'Reem Kufi', sans-serif;
+    color: #444444;
+    background-color: #faebd7;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-products {
+    padding: 80px 0 54px;
+}
+
+.section-products .available {
+    margin-bottom: 50px;
+}
+
+.section-products .available h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #444444;
+}
+
+.section-products .single-product {
+    margin-bottom: 26px;
+}
+
+.section-products .single-product .part-1 {
+    position: relative;
+    height: 290px;
+    max-height: 290px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.section-products .single-product .part-1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.section-products .single-product:hover .part-1::before {
+    transform: scale(1.2, 1.2) rotate(5deg);
+}
+
+.section-products #product-1 .part-1::before {
+    background: url("images/controleTCC1.jpg") no-repeat center;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+.section-products #product-2 .part-1::before {
+    background: url("images/JogosEstimularTCC2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-3 .part-1::before {
+    background: url("images/jogos-educativosTCC3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("images/slidergames2TCC4.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("images/jogos-pedagogicosTCC5.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.section-products .single-product .part-1 .new {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #ffffff;
+    background-color: #fe302f;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.section-products .single-product .part-1 .new {
+    left: 0;
+    background-color: #ff0000;
+}
+
+.section-products .single-product .part-1 ul {
+    position: absolute;
+    bottom: -41px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section-products .single-product:hover .part-1 ul {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.section-products .single-product .part-1 ul li {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.section-products .single-product .part-1 ul li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #444444;
+    text-align: center;
+    box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+    transition: color 0.2s;
+}
+
+.section-products .single-product .part-1 ul li a:hover {
+    color: #fe302f;
+}
+
+.section-products .single-product .part-2 .product-title {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-autor {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-area {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-school {
+    font-size: 1rem;
+}
+
+.section-products .single-product .part-2 .product-date {
+    font-size: 1rem;
+}
+
+footer .social-media {
+    background-color: var(--sndColor);
+    text-align: center;
+    padding-top: 0.5%;
+}
+
+footer .social-media img {
+    transition: all 0.20s ease-in-out;
+    width: 3%;
+}
+
+footer .social-media img:hover {
+    width: 3.5%;
+}
+
+footer .contact {
+    padding-top: 00.5%;
+    padding-bottom: 0.5%;
+    background-color: var(--sndColor);
+    text-align: center;
+}
+
+footer .contact p {
+    font-size: 13px;
+    color: var(--trdColor);
+    padding-top: 1%;
+}
+
+footer .contact button {
+    text-decoration: none;
+    border-color: var(--trdColor);
+    color: var(--trdColor);
+    padding: 0.5%;
+    transition: all 0.10s ease-in-out;
+    background-color: transparent;
+}
+
+footer .contact button:hover {
+    color: var(--sndColor);
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}

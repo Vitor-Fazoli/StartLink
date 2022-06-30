@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/StartLink - logo.ico">
     <title>Cadastro Empresarial</title>
 </head>
@@ -14,16 +14,45 @@
     <div class="register">
         <h1>Cadastro</h1>
         <p>Nome da empresa</p>
-        <input placeholder="Startlink" type="text">
+        <input placeholder="Startlink" type="text" name="user">
         <p>Email</p>
-        <input placeholder="Startlink@exemplo.com" type="email">
+        <input placeholder="Startlink@exemplo.com" type="email" name="email">
         <p>CNPJ</p>
-        <input placeholder="34958934000106" type="number">
+        <input placeholder="34958934000106" type="number" name="cnpj">
         <p>Senha</p>
-        <input placeholder="12345" type="password">
+        <input placeholder="12345" type="password" name="password">
         <p>Confirmar senha</p>
-        <input placeholder="12345" type="password">
-        <button type="submit">Cadastrar</button>
+        <input placeholder="12345" type="password" name="password-confirm">
+        <input type="button" onclick="Register()" class="button" value=Register>
+        <script>
+            function Register() {
+                console.log("entrou");
+                var user = document.getElementsByName('user')[0].value;
+                user.toLowerCase();
+                var email = document.getElementsByName('email')[0].value;
+                email.toLowerCase();
+                var cnpj = document.getElementsByName('cnpj')[0].value;
+                var password = document.getElementsByName('password')[0].value;
+                var passwordConfirm = document.getElementsByName('password-confirm')[0].value;
+
+                if (password.length == 0
+                    || passwordConfirm.length == 0
+                    || email.length == 0
+                    || user.length == 0
+                    || cnpj.length == 0) {
+                    alert("Campos Incompletos");
+                } else if (password != passwordConfirm) {
+                    alert("As senhas não coincidem");
+                } else if (!email.includes("@")) {
+                    alert("Email invalido");
+                } else if (cnpj.length != 14) {
+                    alert("CNPJ invalido")
+                } else {
+                    alert("Cadastrado com sucesso")
+                    window.location = "searchPaper.html";
+                }
+            }
+        </script>
     </div>
 
 
@@ -36,7 +65,7 @@
         </div>
         <div class="contact">
 
-            <button type="button">Contato </button>
+            <button type="button"><a href="Suport.html">Contato</a></button>
             <p>site produzido pela GSApplication</p>
         </div>
     </footer>

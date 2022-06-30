@@ -5,18 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/StartLink - logo.ico">
     <title>Login</title>
 </head>
 
-<body class="login-screen">
-    <h1>Login</h1>
-    <h3>Email</h3>
-    <input placeholder="vitor.silva@exemplo.com" type="email">
-    <h3>Senha</h3>
-    <input placeholder="12345" type="password">
-    <button type="submit">Entrar</button>
+<body class="login-screen" id="login">
+
+    <div class="inputs" id="loginInputs">
+        <input type="text" placeholder="Nome de usuário" name=usuario>
+        <br />
+        <input type="password" placeholder="Senha" name=senha>
+    </div>
+    <div id="enviar">
+        <input type="button" onclick="Login()" class="botao" value=Login>
+        <a href="#">Esqueceu a sua senha?</a>
+    </div>
+    <script language="JavaScript">
+        function Login() {
+            var done = 0;
+            var usuario = document.getElementsByName('usuario')[0].value;
+            usuario = usuario.toLowerCase();
+            var senha = document.getElementsByName('senha')[0].value;
+            seha = senha.toLowerCase();
+            if (usuario == "admin" && senha == "admin") {
+                window.location = "searchPaper.html";
+                done = 1;
+            }
+            if (usuario == "business" && senha == "business") {
+                window.location = "TCC.html";
+                done = 1;
+            }
+            if (done == 0) { alert("Dados incorretos, tente novamente"); }
+        }
+    </script>
 </body>
 
 </html>

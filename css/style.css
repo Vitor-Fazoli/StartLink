@@ -11,6 +11,10 @@
     font-family: 'Reem Kufi', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     border-style: solid;
     border-color: var(--sndColor);
@@ -224,4 +228,9 @@ div.choice a:hover {
 
 .login-screen input {
     background-color: var(--trdColor);
+}
+
+.inputs {
+    gap: 2px;
+    margin: 5px;
 }
