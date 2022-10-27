@@ -6,35 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StartLink</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="Resources/css/style.css">
 </head>
 
 <body>
-    <nav>
-        <img src="" alt="">
-        <h3>StartLink</h3>
-        <button>Login</button>
-        <button>Contato</button>
-        <button>Cadastrar</button>
-    </nav>
-    <div class="line"></div>
-    <div>
-        <div>
-            <h1>Faça seu projeto valer a pena</h1>
-            <p>venha fazer parte da maior comunidade acadêmica do Brasil</p>
-            <button>Venha conhecer</button>
+    <header>
+        <nav class="navbar navbar-expand-lg pt-4">
+            <div class="container-fluid">
+                <img src="/Resources/images/StartLink - logo.svg" alt="StartLink" width="70" height="50">
+                <a id="title" class="navbar-brand" href="#">StartLink</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                </div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-warning">Cadastro</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <hr>
+        <div class="p-5 mb-4 rounded-3">
+            <img width="350px" src="Resources/images/Globo.svg" class="rounded float-end" alt="...">
+            <div class="container-fluid py-5 m">
+                <h1 class="display-5 fw-bold">Faça seu projeto valer a pena</h1>
+                <p class="col-md-8 fs-4 text-muted">venha fazer parte da maior comunidade acadêmica do Brasil</p>
+                <button class="btn btn-primary btn-lg" type="button">Venha conhecer</button>
+            </div>
         </div>
-        <img src="" alt="">
-    </div>
-    <div>
-        <img src="" alt="">
-        <div>
-            <h2>Entre e surprenda-se com novas ideias</h2>
-            <p>conheça outros artigos para ajudar com a sua pesquisa</p>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-6 fw-bold lh-1 mb-3">Entre e surprenda-se com novas ideias</h1>
+                    <p class="col-md-8 fs-4 text-muted">Conheça outros artigos para ajudar com a sua pesquisa</p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="Resources/images/Ideias.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="400" height="300" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="p-3 text-bg-dark bg-black">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <footer class="w-100 bg-black">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contato</a></li>
+                    </ul>
+                    <p class="text-center text-muted">© 2022 StartLink, Inc</p>
+                </footer>
+            </div>
         </div>
     </div>
-    <footer>
-        <p class="footer_inc">c2022 Startlink, inc.</p>
-    </footer>
 </body>
 
 </html>
